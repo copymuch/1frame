@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background: url("../img/bodybg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  margin: 0;
+  padding: 87px 0 0 0;
+}
+
+.header-container {
+  width: 100%;
+}
+
+.nav-box, nav, .nav-bar, .nav-bttn, .nav-bttn-bar, .nav-img, .header-container {
+  display: flex;
+}
+
+.nav-img {
+  align-items: flex-start;
+}
+
+.nav-box {
+  flex: 0 1 100%;
+  justify-content: space-between;
+}
+.nav-box ul {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+  color: #b5b5b5;
+  justify-content: center;
+  align-items: center;
+}
+.nav-box .nav-bar {
+  padding-left: 44px;
+}
+.nav-box .nav-bar li {
+  padding-left: 15px;
+}
+.nav-box .nav-bar li:first-of-type {
+  padding: 0;
+}
+.nav-box .nav-bttn {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.nav-box .nav-bttn li {
+  margin-left: 20px;
+}
+.nav-box .nav-bttn li:first-of-type {
+  margin-left: 0;
+}
+.nav-box .nav-bttn a {
+  text-decoration: none;
+  color: #f2994A;
+  font-weight: 600;
+  border: 1px solid #f2994a;
+  border-radius: 5px;
+  padding: 8px 27px;
+}
+.nav-box .nav-bttn #bttn2 {
+  box-shadow: 0 0 30px #f2994A;
+}
+.nav-box .nav-bttn #bttn2 a {
+  color: #fff;
+  background-color: #f2994A;
+}
