@@ -29,6 +29,7 @@ header {
 
 .nav-box, nav, .nav-bar, .nav-bttn, .nav-bttn-bar, .nav-img, .header-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-img {
@@ -98,6 +99,7 @@ header {
   .nav-bttn-burger {
     display: flex;
     position: relative;
+    top: -27px;
     width: 35px;
     height: 50px;
   }
