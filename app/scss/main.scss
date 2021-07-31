@@ -8,6 +8,15 @@ body {
 	background-size: cover;
 }
 
+h2 {
+	color: aquamarine;
+	font-size: 44px;
+}
+
+p {
+	color: slateblue;
+	font-size: 18px;
+}
 
 .wrapper {
 	max-width: 100%;
@@ -67,7 +76,11 @@ header {
 				margin-left: 0;
 			}
 		}
-		a {
+	}
+}
+
+.nav-bttn,.promo-bttn {
+	a {
 			text-decoration: none;
 			color: #f2994A;
 			font-weight: 600;
@@ -75,15 +88,79 @@ header {
 			border-radius: 5px;
 			padding: 8px 27px;
 		}
-		#bttn2 {
-			box-shadow: 0 0 30px #f2994A;
-			a {
-			color: #fff;
-			background-color: #f2994A;
-			}
-		}
+}
+
+.bttn-bg {
+	box-shadow: 0 0 30px #f2994A;
+	a {
+		color: #fff;
+		background-color: #f2994A;
 	}
 }
+.promo {
+	margin-top: 135px;
+}
+.promo-container,.promo-text,.promo-img {
+	display: flex;
+}
+
+.promo-container {
+	width: 100%;
+	justify-content: space-between;
+}
+.promo-text {
+	flex-direction: column;
+	width: 47%;
+	h2 {
+		padding: 0;
+		margin: 0;
+	}
+}
+.promo-img {
+	display: flex;
+	width: 40%;
+}
+
+.promo-img img {
+	margin: 0 auto;
+}
+.promo-bttn {
+	ul {
+		display: flex;
+		list-style: none; 
+		padding: 0;
+	}
+	#bttn3 a {
+		padding: 8px 55px; 
+		margin-left: 20px; 
+	}
+}
+
+.promo-video {
+	display: flex;
+	margin-top: 60px;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.video-text {
+	padding-left: 20px;
+	p {
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+	}
+	#videop2{
+		padding-top: 6px;
+		font-size: 14px;
+	}
+}
+@media (max-width: 992px) {
+	.promo-img {
+			position: absolute;
+		}
+}
+
 
 @media (max-width: 767px) {
 	.nav-bttn-bar {
@@ -121,5 +198,17 @@ header {
 			border:1px solid #fff;
 			border-radius: 25px;
 		}
+	}
+	.promo-container {
+		flex-wrap: wrap;
+		.promo-img {
+			position: absolute;
+		}
+		.promo-text{
+			width:100%;
+		}
+	}
+	h2 {
+		font-size: 35px;
 	}
 }
