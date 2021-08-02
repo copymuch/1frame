@@ -11,6 +11,9 @@ body {
 h2 {
 	color: aquamarine;
 	font-size: 44px;
+	padding: 0;
+	margin: 0;
+
 }
 
 
@@ -117,10 +120,6 @@ header {
 .promo-text {
 	flex-direction: column;
 	width: 47%;
-	h2 {
-		padding: 0;
-		margin: 0;
-	}
 }
 .promo-img {
 	display: flex;
@@ -211,9 +210,50 @@ header {
 		font-size: 14px;
 	}
 }
+.traffic {
+	padding: 150px 0;
+}
+.traffic-abz,.traffic-img,.traffic-container {
+	display: flex;
+}
+
+.traffic-container {
+	position: relative;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.orange {
+	color: #F2994A;
+}
+
+.traffic-abz {
+	flex-direction: column;
+}
+
+
+.traffic-text p {
+	margin:32px 0;
+}
+
+.traffic-bttn {
+	margin-top: 42px
+}
+
+.traffic-bttn a {
+	text-decoration: none;
+	border: 1px solid #F2994A;
+	border-radius: 5px;
+	padding: 14px 30px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #F2994A;
+}
 @media (min-width: 992px) {
 	.perks-item {
 		flex-basis: 30%;
+	}
+	.traffic-abz {
+		flex:0 1 45%;
 	}
 }
 
@@ -227,6 +267,11 @@ header {
 	.perks-item {
 		flex-basis: 50%;
 	}
+	.traffic-img{
+	position: absolute;
+	opacity: 0.3;
+	right: 60px;
+}
 }
 
 
