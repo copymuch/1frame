@@ -16,6 +16,10 @@ h2 {
 
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+}
 
 h3 {
 	color: aquamarine;
@@ -217,18 +221,23 @@ header {
 	display: flex;
 }
 
+.traffic-img img {
+	width: 100%;
+}
 .traffic-container {
 	position: relative;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .orange {
-	color: #F2994A;
+	color: #f2994A;
 }
 
 .traffic-abz {
 	flex-direction: column;
 }
+
+
 
 
 .traffic-text p {
@@ -241,15 +250,46 @@ header {
 
 .traffic-bttn a {
 	text-decoration: none;
-	border: 1px solid #F2994A;
+	border: 1px solid #f2994A;
 	border-radius: 5px;
 	padding: 14px 30px;
 	font-size: 12px;
 	color: #fff;
-	background-color: #F2994A;
+	background-color: #f2994A;
+}
+.save {
+	text-align: center;
+	margin-top: 50px;
+	p {
+		font-size: 15px;
+	}
+	h3 {
+		font-size: 36px;
+	}
+}
+
+.save-push,.save-push-bar,.push-item {
+	display: flex;
+}
+
+.save-push {
+	ul {
+		list-style: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 0;
+	}
+	li {
+		flex-direction: column;
+		h3 {
+			padding: 0;
+			margin: 0;
+		}
+	}
 }
 @media (min-width: 992px) {
-	.perks-item {
+	.perks-item,.push-item {
 		flex-basis: 30%;
 	}
 	.traffic-abz {
@@ -264,8 +304,11 @@ header {
 	.promo-img {
 		position: absolute;
 	}
-	.perks-item {
+	.perks-item,.push-item {
 		flex-basis: 50%;
+	}
+	.push-item:last-of-type{
+		flex-basis:100%;
 	}
 	.traffic-img{
 	position: absolute;
@@ -279,7 +322,7 @@ header {
 	.container {
 		max-width: none;
 	}
-	.perks-item {
+	.perks-item,.push-item {
 		flex:0 1 100%;
 	}
 	.nav-bttn-bar {
