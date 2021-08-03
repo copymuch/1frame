@@ -105,6 +105,13 @@ header {
 .bttn-bg a {
   color: #fff;
   background-color: #f2994A;
+  text-decoration: none;
+  border: 1px solid #f2994A;
+  border-radius: 5px;
+  padding: 8px 30px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #f2994A;
 }
 
 .promo {
@@ -143,8 +150,13 @@ header {
   padding: 0;
 }
 .promo-bttn #bttn3 a {
-  padding: 8px 55px;
   margin-left: 20px;
+  padding: 13px 55px;
+}
+
+.promo-bttn-item a {
+  padding: 13px 31px;
+  font-size: 12px;
 }
 
 .promo-video {
@@ -248,13 +260,7 @@ header {
 }
 
 .traffic-bttn a {
-  text-decoration: none;
-  border: 1px solid #f2994A;
-  border-radius: 5px;
-  padding: 14px 30px;
-  font-size: 12px;
-  color: #fff;
-  background-color: #f2994A;
+  padding: 13px 31px;
 }
 
 .save {
@@ -285,6 +291,31 @@ header {
 .save-push li h3 {
   padding: 0;
   margin: 0;
+}
+
+.project {
+  text-align: center;
+}
+
+.project-bttn {
+  margin-top: 46px;
+  margin-bottom: 21px;
+}
+
+.project-img {
+  padding: 0;
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-bttn a {
+  padding: 13px 31px;
 }
 
 @media (min-width: 992px) {
