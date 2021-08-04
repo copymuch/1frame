@@ -294,6 +294,7 @@ header {
 }
 
 .project{
+	margin-top: 170px;
 	text-align:center;
 }
 
@@ -316,6 +317,110 @@ header {
 
 .project-bttn a {
 	padding:13px 31px;
+}
+
+.form-div {
+	text-align: center;
+}
+
+.form-container {
+	background-color: rgba(60,73,125,.3);
+	padding: 50px 0 25px 0;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	padding: 18px 40px;
+	margin: 0;
+	color: #fff;
+	box-shadow: none;
+	outline: none;
+	border-color: #f2994A;
+	border-radius: 0 5px 5px 0;
+	background-color: #f2994A; 
+	&:active, &:focus {
+  		outline: none;
+	}
+}
+input {
+	padding-left: 15px;
+	margin: 0;
+	color: #fff;
+	width: 308px;
+	border:1px solid rgba(	246, 246, 246,.1);
+	border-radius: 5px 0 0 5px;
+	background-color: rgba(	246, 246, 246,.1);
+}
+
+footer {
+	margin-top: 170px;
+	h2 {
+		font-size: 26px;
+	}
+	h3 {
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		font-size: 15px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		font-size: 15px;
+	}
+}
+
+.footer-bars,.footer-bar,.text-row,.media-bar {
+	display: flex;
+}
+
+.media-bar {
+	width: 100%;
+	justify-content: flex-end;
+	ul {
+		display: flex;
+	}
+	li {
+		display: flex;
+		margin-left:16px;
+		&:first-of-type{
+			margin-left:0;
+	}
+}
+}
+
+.footer-bars {
+	padding-top: 94px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-bar {
+	flex-direction: column;
+	li {
+		padding-top: 16px;
+	}
+}
+
+.footer-bottom {
+	display: flex;
+	padding-top: 120px;
+	justify-content: center;
+	flex-wrap: wrap;
+	p {
+		color: #8D8D8D;
+		font-size: 14px;
+		padding-left: 32px;
+		&:first-of-type{
+			padding-left: 0;
+		}
+	}
 }
 @media (min-width: 992px) {
 	.perks-item,.push-item {
@@ -353,6 +458,25 @@ header {
 	}
 	.perks-item,.push-item {
 		flex:0 1 100%;
+	}
+	.footer-bar {
+		flex:0 1 50%;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	.footer-bottom {
+		p {
+			margin: 10px;
+			padding: 0;
+		}
+		padding: 30px;
+		margin: 0;
+	}
+	button {
+		padding: 18px 20px;
+	}
+	input {
+		width: 150px;
 	}
 	.nav-bttn-bar {
 		display: none;
