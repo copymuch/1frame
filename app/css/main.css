@@ -83,12 +83,6 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
 }
-.nav-box .nav-bttn li {
-  margin-left: 20px;
-}
-.nav-box .nav-bttn li:first-of-type {
-  margin-left: 0;
-}
 
 .nav-bttn a, .promo-bttn a {
   text-decoration: none;
@@ -432,6 +426,13 @@ footer ul {
   .traffic-abz {
     flex: 0 1 45%;
   }
+
+  .nav-bttn li {
+    margin-left: 20px;
+  }
+  .nav-bttn li:first-of-type {
+    margin-left: 0;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -488,8 +489,41 @@ footer ul {
     width: 150px;
   }
 
+  .fixed-page {
+    overflow: hidden;
+  }
+
+  .nav-bttn li {
+    margin-left: 0;
+  }
+
   .nav-bttn-bar {
-    display: none;
+    display: block;
+    position: absolute;
+    text-align: center;
+    right: -100%;
+    top: 0px;
+    width: 100%;
+    padding: 390px 0;
+    margin: 0;
+    z-index: 2;
+    overflow: auto;
+    background-color: grey;
+  }
+  .nav-bttn-bar a {
+    border: none;
+    background: none;
+    z-index: 1;
+  }
+  .nav-bttn-bar li {
+    z-index: 1;
+    box-shadow: none;
+  }
+
+  .open-menu {
+    right: 0;
+    overflow: hidden;
+    transition: right 0.2s ease;
   }
 
   .nav-bar li:last-of-type {
@@ -504,6 +538,7 @@ footer ul {
     display: flex;
     position: relative;
     top: -35px;
+    z-index: 3;
     width: 35px;
     height: 50px;
   }

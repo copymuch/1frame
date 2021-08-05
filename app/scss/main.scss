@@ -83,12 +83,6 @@ header {
 	.nav-bttn {
 		justify-content: flex-end;
 		align-items: flex-end;
-		li {
-			margin-left: 20px;
-			&:first-of-type {
-				margin-left: 0;
-			}
-		}
 	}
 }
 
@@ -429,6 +423,14 @@ footer {
 	.traffic-abz {
 		flex:0 1 45%;
 	}
+	.nav-bttn {
+	li {
+			margin-left: 20px;
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -478,8 +480,41 @@ footer {
 	input {
 		width: 150px;
 	}
+	.fixed-page {
+		overflow: hidden;
+	}
+	.nav-bttn li {
+		margin-left:0;
+	}
 	.nav-bttn-bar {
-		display: none;
+		display: block;
+		position:absolute;
+		text-align: center;
+		right: -100%;
+		top: 0px;
+		width: 100%;
+		padding:390px 0;
+		margin: 0;
+		z-index: 2;
+		overflow: auto;
+		background-color: grey;
+		ul {}
+		a {
+			border:none;
+			background: none;
+			z-index: 1;
+
+		}
+		li {
+			z-index: 1;
+			box-shadow: none;
+
+		}
+	}
+	.open-menu {
+		right: 0;
+		overflow: hidden;
+		transition: right 0.2s ease;
 	}
 	.nav-bar{
 		li:last-of-type{
@@ -493,6 +528,7 @@ footer {
 		display: flex;
 		position: relative;
 		top: -35px;
+		z-index: 3;
 		width: 35px;
 		height: 50px;
 		&:after, &:before {
