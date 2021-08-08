@@ -118,6 +118,12 @@ header {
 
 .promo {
   margin-top: 135px;
+  opacity: 0;
+}
+
+.promo-show {
+  opacity: 1;
+  transition: all 1.5s;
 }
 
 .promo-container, .promo-text, .promo-img {
@@ -183,6 +189,15 @@ header {
 
 .choice {
   margin-top: 100px;
+  opacity: 0;
+  position: relative;
+  left: -100%;
+}
+
+.choice-show {
+  opacity: 1;
+  transition: all 1.5s;
+  left: 0;
 }
 
 .choice-perks, .perks-bar, .perks-item {
@@ -592,7 +607,7 @@ footer ul {
   .nav-bttn-burger.open-menu:before {
     transform: rotate(-48deg);
     transition: 0.4s;
-    top: 10px;
+    top: 11px;
   }
 
   .promo-container {
